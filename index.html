@@ -9,6 +9,16 @@
 <body>
     <div class="container">
         <h1>Tic Tac Toe Game</h1>
+        <div class="players">
+            <div class="playerX">
+                <label for="">PlayerX Name:</label>
+                <input class="playerXName" type="text" autocomplete="off">
+            </div>
+            <div class="playerO">
+                <label for="">PlayerO Name:</label>
+                <input class="playerOName" type="text" autocomplete="off">
+            </div>
+        </div>
 
         <div class="gameboard">
             <div class="square"></div>
@@ -21,6 +31,10 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
+
+        <div class="status"></div>
+
+        <button class="restartBtn">RestartGame</button>
     </div>
     
     <script src="script.js"></script>
