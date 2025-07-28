@@ -18,6 +18,32 @@
     margin-top: 40px;
 }
 
+.container .players {
+    display: flex;
+
+    gap: 20px;
+}
+
+.container .players label {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.container .players input {
+    height: 20px;
+
+    font-size: 1rem;
+
+    text-align: center;
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.container .players input:focus {
+    outline: none;
+}
+
 .container .gameboard {
     padding: 10px;
 
@@ -34,6 +60,12 @@
 }
 
 .container .gameboard .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 4rem;
+
     padding: 40px;
 
     border: 2px solid black;
@@ -41,4 +73,23 @@
     border-radius: 5px;
 
     background-color: white;
+}
+
+.container .status {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.container .restartBtn {
+    width: 200px;
+    height: 50px;
+
+    background-color: rgb(120, 120, 255);
+    color: white;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 10px;
 }
