@@ -97,15 +97,14 @@ const GameController = (function () {
 
             playerTurn = !playerTurn;
 
-            // Checks If The Game Has Ended
-            if (Gameboard.isBoardFull()) {
-                console.log("The game has ended: TIE");
-                gameDone = true;
-            }
-
             if (Gameboard.isBoardWinner() !== null) {
                 console.log("The game has ended: Player" + Gameboard.isBoardWinner() + " wins");
                 gameDone = true;
+            } else {
+                if (Gameboard.isBoardFull()) {
+                    console.log("The game has ended: TIE");
+                    gameDone = true;
+                }
             }
         }
     };
